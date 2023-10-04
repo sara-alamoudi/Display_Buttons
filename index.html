@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #navbar-example1 .nav-link {
+            background-color: #ebebeb;
+            color: #2e4a8a !important;
+        }
+
+        #navbar-example1 .nav-link.active {
+            color: #ebebeb !important;
+            background-color: #2e4a8a !important;
+        }
+
+        body {
+            font-family: 'Droid Arabic Kufi';
+            background: #eceef0;
+        }
+    </style>
+    <nav id="navbar-example1" class="navbar sticky-top bg-body-tertiary px-3 mb-3">
+        <a class="navbar-brand" href="#">عرض محتوى</a>
+        <ul class="nav nav-pill ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">شرائح عرض</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">البطاقات شكل 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">البطاقات شكل 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">البطاقات شكل 3</a>
+            </li>
+        </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example1" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <p>
+        <div class="container mt-5 mb-5">
+            <h4 id="scrollspyHeading1" style="text-align: center;">شرائح عرض</h4>
+            <div class="container border border-black rounded-2 pt-2 pb-3">
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="55%" y="50%" fill="#555" dy=".3em">الشريحة الأولى</text></svg>
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان اول سلايد</h5>
+                                <p>وصف يعبر عن السلايد</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="55%" y="50%" fill="#555" dy=".3em">الشريحة الثانية</text></svg>      
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان ثاني سلايد</h5>
+                                <p>وصف يعبر عن السلايد</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="55%" y="50%" fill="#555" dy=".3em">الشريحة الثالثة</text></svg>        
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>عنوان ثالث سلايد</h5>
+                                <p>وصف يعبر عن السلايد</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <style>
+                    body {
+                        font-family: 'Droid Arabic Kufi';
+                    }
+                </style>
+            </div>
+            <div class="container mt-4" style="display: flex; justify-content: space-between; background-color: black;">
+                <h4></h4>
+                <!-- Copy to clipboard -->
+                <a tabindex="0" class="copy-code-button btn" role="button" id="button1" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-content="تم النسخ !"
+                    onclick="copyCodeToClipboard('code1',this.id)">
+                    <i class='bi bi-clipboard2' style="font-size: 1.2rem; color: #ebebeb;"></i>
+                </a>
+            </div>
+            <pre><code class="overflow-y-auto" id="code1" style="height: 400px; direction: ltr;">
+&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-4&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+body {
+    font-family: 'Droid Arabic Kufi';
+}
+&lt;/style&gt;
+                    </code></pre>
+        </div>
+        </p>
+        <p>
+        <div class="container mt-5 mb-5">
+            <h4 id="scrollspyHeading2" style="text-align: center;">البطاقات شكل 1</h4>
+            <div class="container border border-black rounded-2 pt-3 pb-3">
+                <div class="card" style="width: 18rem;">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#868e96"></rect><text x="58%" y="50%"
+                        fill="#dee2e6" dy=".3em">صورة</text>
+                    </svg>
+                        <div class="card-body align-content-center">
+                        <h5 class="card-title">عنوان البطاقة</h5>
+                        <p class="card-text">هنا يمكنك كتابة الوصف</p>
+                        <a href="#" class="btn first-btn">للمزيد</a>
+                    </div>
+                </div>
+                <style>
+                    body {
+                        font-family: 'Droid Arabic Kufi';
+                    }
+
+                    .first-btn:hover {
+                        background-color: #ebebeb;
+                        color: #5e8557;
+                        border-color: #5e8557;
+                    }
+
+                    .first-btn,
+                    .first-btn:focus {
+                        color: #ebebeb;
+                        background-color: #5e8557;
+                        border-color: #5e8557;
+                    }
+                </style>
+            </div>
+            <div class="container mt-4" style="display: flex; justify-content: space-between;background-color: black;">
+                <h4></h4>
+                <!-- Copy to clipboard -->
+                <a tabindex="0" class="copy-code-button btn" role="button" id="button2" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-content="تم النسخ !"
+                    onclick="copyCodeToClipboard('code2',this.id)">
+                    <i class='bi bi-clipboard2' style="font-size: 1.2rem;color: #ebebeb"></i>
+                </a>
+            </div>
+            <pre><code class="overflow-y-auto" id="code2" style="height: 400px; direction: ltr;">
+&lt;div class=&quot;card&quot; style=&quot;width: 18rem;&quot;&gt;
+&lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+&lt;div class=&quot;card-body align-content-center&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;عنوان البطاقة&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;هنا يمكنك كتابة الوصف&lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn first-btn&quot;&gt;للمزيد&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+body {
+    font-family: 'Droid Arabic Kufi';
+}
+
+.first-btn:hover {
+    background-color: #ebebeb;
+    color: #5e8557;
+    border-color: #5e8557;
+}
+
+.first-btn,
+.first-btn:focus {
+    color: #ebebeb;
+    background-color: #5e8557;
+    border-color: #5e8557;
+}
+                </code></pre>
+        </div>
+        </p>
+        <p>
+        <div class="container mt-5 mb-5">
+            <h4 id="scrollspyHeading3" style="text-align: center;">البطاقات شكل 2</h4>
+            <div class="container border border-black rounded-2 pt-3 pb-3">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="58%" y="50%"
+                                    fill="#dee2e6" dy=".3em">صورة</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">العنوان</h5>
+                                <p class="card-text">هنا كتابة الوصف.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="58%" y="50%"
+                                    fill="#dee2e6" dy=".3em">صورة</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">العنوان</h5>
+                                <p class="card-text">هنا كتابة الوصف.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="180"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                                preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#868e96"></rect><text x="58%" y="50%"
+                                    fill="#dee2e6" dy=".3em">صورة</text>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">العنوان</h5>
+                                <p class="card-text">هنا كتابة الوصف.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-4" style="display: flex; justify-content: space-between;background-color: black;">
+                <h4></h4>
+                <!-- Copy to clipboard -->
+                <a tabindex="0" class="copy-code-button btn" role="button" id="button3" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-content="تم النسخ !"
+                    onclick="copyCodeToClipboard('code3',this.id)">
+                    <i class='bi bi-clipboard2' style="font-size: 1.2rem;color: #ebebeb"></i>
+                </a>
+            </div>
+            <pre><code class="overflow-y-auto" id="code3" style="height: 400px; direction: ltr;">
+&lt;div class=&quot;row row-cols-1 row-cols-md-3 g-4&quot;&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col&quot;&gt;
+    &lt;div class=&quot;card h-100&quot;&gt;
+        &lt;img src=&quot;...&quot; class=&quot;card-img-top&quot; alt=&quot;...&quot;&gt;
+        &lt;div class=&quot;card-body&quot;&gt;
+            &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+            &lt;p class=&quot;card-text&quot;&gt;هنا كتابة الوصف.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+body {
+    font-family: 'Droid Arabic Kufi';
+}
+&lt;/style&gt;
+        </code></pre>
+        </div>
+        </p>
+        <p>
+        <div class="container mt-5 mb-5">
+            <h4 id="scrollspyHeading4" style="text-align: center;">البطاقات شكل 3</h4>
+            <div class="container border border-black rounded-2 pt-3 pb-3">
+                <div class="card text-bg-dark">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg card-img" width="100%" height="270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="55%" y="50%" fill="#dee2e6" dy=".3em" >هنا الصورة</text></svg>
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">العنوان</h5>
+                      <p class="card-text">كتابة الوصف هنا </p>
+                    </div>
+                  </div>
+            </div>
+            <div class="container mt-4" style="display: flex; justify-content: space-between;background-color: black;">
+                <h4></h4>
+                <!-- Copy to clipboard -->
+                <a tabindex="0" class="copy-code-button btn" role="button" id="button4" data-bs-toggle="popover"
+                    data-bs-trigger="focus" data-bs-content="تم النسخ !"
+                    onclick="copyCodeToClipboard('code4',this.id)">
+                    <i class='bi bi-clipboard2' style="font-size: 1.2rem;color: #ebebeb"></i>
+                </a>
+            </div>
+            <pre><code class="overflow-y-auto" id="code4" style="height: fit-content; direction: ltr;">
+    &lt;div class=&quot;card text-bg-dark&quot;&gt; 
+    &lt;img src=&quot;...&quot; class=&quot;card-img&quot; alt=&quot;...&quot;&gt;
+    &lt;div class=&quot;card-img-overlay&quot;&gt;
+        &lt;h5 class=&quot;card-title&quot;&gt;العنوان&lt;/h5&gt;
+        &lt;p class=&quot;card-text&quot;&gt;كتابة الوصف هنا &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;style&gt;
+    body {
+        font-family: 'Droid Arabic Kufi';
+    }
+&lt;/style&gt;
+        </code></pre>
+        </div>
+        </p>
+
+    </div>
+    <script>
+        function copyCodeToClipboard(codeId, buttonId) {
+            const codeBlock = document.getElementById(codeId);
+            const textarea = document.createElement("textarea");
+            const copyButton = document.getElementById(buttonId);
+            document.body.appendChild(textarea);
+            textarea.value = codeBlock.innerText;
+            textarea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textarea);
+            copyButton.innerHTML = "<i class='bi bi-check' style='font-size: 1.2rem;color: #ebebeb;'></i>";
+            setTimeout(() => {
+                copyButton.innerHTML = "<i class='bi bi-clipboard2' style='font-size: 1.2rem;color: #ebebeb;'></i>";
+            }, 1500);
+        }
+
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+
+</html>
